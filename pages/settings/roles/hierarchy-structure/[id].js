@@ -106,7 +106,7 @@ function DetailData() {
       })
       setDataDetail(res.data.payload)
     } catch (e) {
-      console.log(e, e.response)
+      throw e
     }
   }
 
@@ -207,9 +207,7 @@ function DetailData() {
         </div>
       </>
     )
-  }
-  console.log(translate);
-  
+  }  
 
   return (
     <div className={classes.root}>

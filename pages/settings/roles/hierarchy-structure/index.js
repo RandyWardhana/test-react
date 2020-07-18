@@ -82,7 +82,7 @@ function ResponsiveDrawer() {
       setOffset(res.data.offset)
       setTotal(res.data.count)
     } catch (e) {
-      console.log(e, e.response.data)
+      throw e
     }
   }
 
